@@ -90,3 +90,7 @@ body{
 .userNameAndName{
   margin-bottom: 0;
 }
+
+.img{
+  color: var(--dark-4);
+}

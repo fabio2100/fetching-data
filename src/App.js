@@ -40,7 +40,7 @@ function App() {
     {cargado && users.map(user=>
         {return <div key={user.id} className='post'>
           <p className='userNameAndName'><span className='username'>{user.username}</span><span className='name'>{user.name}</span></p> 
-          <p className='email'><img src='./img/email.png' alt='Email:'/>{user.email}</p>
+          <div className='email'><img className='img' src="/img/email.png" alt='Email:'/><span>{user.email}</span></div>
           <button value={user.id} onClick={handlePosts}>Posts</button>
           <button>Albums</button>
           <button>To dos</button>
