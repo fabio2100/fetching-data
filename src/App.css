@@ -1,3 +1,10 @@
+:root{
+  --dark-1:#0F044C;
+  --dark-2:#141E61;
+  --dark-3:#787A91;
+  --dark-4:#EEEEEE;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.post{
+  border: 1px solid var(--dark-2);
+  border-radius: 10px;
+  padding-left: 3%;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+
+body{
+  background-color: var(--dark-1);
+  color: var(--dark-4);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 3%;
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+.comment{
+  margin-left: 3%;
+}
+
+.border-main{
+  border-left: 6px solid var(--dark-3);
+}
+
+.username{
+  margin-right: 4px;
+}
+
+.name{
+  color: var(--dark-3);
+  font-size:smaller;
+}
+
+.email{
+  font-size: small;
+  color: var(--dark-3);
+  margin-top: 0;
+  padding-top: 0;
+  
+}
+
+.userNameAndName{
+  margin-bottom: 0;
 }
