@@ -21,15 +21,15 @@ export default function Post({title,body,id}){
 
     return(
         <div className="post">
-            <p>{title}</p>
-            <p>{body}</p>
-            <button value={id} onClick={handleComments}>Comments</button>
+            <p className="title">{title}</p>
+            <p className="body">{body}</p>
+            <button className="buttonGeneral" value={id} onClick={handleComments}>See comments</button>
             <div className="border-main">
             {postSelected == id && comments.map(comment=>{
                 return <div className="post">
-                    <p>{comment.name}</p>
-                    <p>{comment.email}</p>
-                    <p>{comment.body}</p>
+                    <p className="emailComment">{comment.email}</p>
+                    <p className="title">{comment.name}</p>
+                    <p className="body">{comment.body}</p>
                 </div>
             })}
             </div>

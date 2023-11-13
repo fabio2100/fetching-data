@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import Post from './Post';
@@ -40,10 +39,8 @@ function App() {
     {cargado && users.map(user=>
         {return <div key={user.id} className='post'>
           <p className='userNameAndName'><span className='username'>{user.username}</span><span className='name'>{user.name}</span></p> 
-          <div className='email'><img className='img' src="/img/email.png" alt='Email:'/><span>{user.email}</span></div>
-          <button value={user.id} onClick={handlePosts}>Posts</button>
-          <button>Albums</button>
-          <button>To dos</button>
+          <div className='email'><img className='img' src="/img/email.svg" alt='Email:'/><span className='userEmail'>{user.email}</span></div>
+          <button className='buttonGeneral' value={user.id} onClick={handlePosts}>See posts</button>
           <div className='border-main'>
           {userSelected == user.id && posts.map(post=>{
             return <Post key={post.id} title={post.title} body={post.body} id={post.id}/>
